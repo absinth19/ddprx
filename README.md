@@ -67,6 +67,7 @@ All'interno di questo file, individua e modifica le seguenti righe:
 
 ```python
 MFPLINK = "inserisci url del tuo mfp (sempre formato embed)"     # non mettere lo / finale al link
+MFPPSW = "inserisci password del tuo mfp"
 ```
 
   
