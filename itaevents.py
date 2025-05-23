@@ -12,7 +12,7 @@ import time
 import re
 from urllib.parse import quote_plus  # Add this import
 
-PRXLINK = "https://trimming-proxydd.hf.space" # non mettere lo / finale
+PRXLINK = "" # non mettere lo / finale
 
 # Constants
 REFERER = "forcedtoplay.xyz"
@@ -847,7 +847,7 @@ def process_events():
                                     # Get dynamic logo for this event
                                     event_logo = get_dynamic_logo(game["event"])
 
-                                    file.write(f'#EXTINF:-1 tvg-id="{event_name} - {event_details.split(":", 1)[1].strip() if ":" in event_details else event_details}" tvg-name="{tvg_name}" tvg-logo="{event_logo}" group-title="{clean_sport_key}", {channel_name_str} - {tvg_name}\n')
+                                    file.write(f'#EXTINF:-1 tvg-id="{event_name} - {event_details.split(":", 1)[1].strip() if ":" in event_details else event_details}" tvg-name="{tvg_name}" tvg-logo="{event_logo}" group-title="{clean_sport_key}", {channel_name_str}\n')
                                     file.write(f"{PROXY}{stream_url_dynamic}\n\n")
 
                                 processed_channels += 1
