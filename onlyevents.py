@@ -352,7 +352,7 @@ def addChannelsByLeagueSport():
                                 # Crea il nuovo formato per tvg-name con l'orario all'inizio e la data alla fine
                                 tvg_name = f"{time_only} {event_details} - {day_num}/{month_num}/{year_short}"
 
-                                file.write(f'#EXTINF:-1 tvg-id="{event_name} - {event_details.split(":", 1)[1].strip() if ":" in event_details else event_details}" tvg-name="{tvg_name}" tvg-logo="{LOGO}" group-title="{clean_sport_key}", {channel["channel_name"]}\n')
+                                file.write(f'#EXTINF:-1 tvg-id="{event_name} - {event_details.split(":", 1)[1].strip() if ":" in event_details else event_details}" tvg-name="{tvg_name}" tvg-logo="{LOGO}" group-title="{clean_sport_key}", {tvg_name} - {channel["channel_name"]}\n')
                                 file.write(f"{PROXY}{stream_url_dynamic}\n\n")
 
 
