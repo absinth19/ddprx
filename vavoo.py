@@ -5,7 +5,7 @@ import os
 
 USREPG = "absinth19"
 BRANCHEPG = "ddprx"
-MFPLINK = "https://trimming-passaggio.hf.space"     # non mettere lo / finale al link
+MFPLINK = "https://trimming-hfpassaggio.hf.space"     # non mettere lo / finale al link
 MFPPSW = "Leggila"
 
 
